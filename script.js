@@ -1,6 +1,3 @@
-//TODO
-//Ostylować zdjęcia pojedyńczych osób i je opisać
-
 
 //Dark/Light theme
 var r = document.querySelector(':root');

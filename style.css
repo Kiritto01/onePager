@@ -46,7 +46,6 @@ a {
     text-decoration: none;
     font-weight:bold;
 }
-.firstLine a:hover,
 .dwBTTN:hover,
 .header li a:hover,
 .header .menu-btn:hover {
@@ -208,7 +207,9 @@ a {
     text-align: center;
 }
 .firstLine a{
+    width: min-content;
     text-decoration: none;
+    cursor:default;
 }
 .firstLine h2{
     margin-left: 10vw;
@@ -272,6 +273,7 @@ a {
     width: 3.5rem;
     height: 3.5rem;
 }
+.firstLine h2:hover,
 .socialIcon img:hover{
     -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
