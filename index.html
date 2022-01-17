@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>smallTalk</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">smallTalk</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <button id="bttn" class="dwBTTN" onclick="console.log('clicked')">DARK</button>
+            <li><a href="#work">Głowna</a></li>
+            <li><a href="#project">O Projekcie</a></li>
+            <li><a href="#about">O Nas</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </header>
+    <div class="wrapper" id="project">
+        <div class="project">
+            <h2>O Projekcie</h2>
+            <p>W ramach projektu smallTalk planujemy zająć się problemem, jakim jest utrudnione nawiązywanie znajomości
+                wynikające ze zmian społecznych związanych z pandemią oraz rozwojem internetu. Chcemy rozwiązać ten
+                problem tworząc aplikację. Będzie ona eliminować przyczyny niechęci do prób nawiązania znajomości: stres
+                związany z niepewnością, strach przed odrzuceniem lub brakiem wspólnych zainteresowań. Aplikacja pozwala
+                na anonimowe, a co za tym idzie bezstresowe nawiązywanie kontaktu przez osoby, które tak naprawdę już
+                się znają. Chodzą do jednej szkoły, pracują w jednym budynku, lub wybrali się na ten sam event.
+                Następnie osoby są łączone i mogą porozmawiać ze sobą. Wiedzą, że mają coś wspólnego z rozmówcą, ale nie
+                znają jego tożsamości. Przez to mogą być w 100% sobą. Jeżeli się nie uda - nic straconego. Natomiast
+                jeżeli rozmowa przebiegnie pomyślnie, mają możliwość bezpiecznego ujawnienia się za obustronną zgodą - a
+                potem pozostaje tylko kontynuowanie tej znajomości w prawdziwym życiu!
+            </p>
+        </div>
+        <div class="about" id="about">
+            <h2>O Nas</h2>
+            <p>Jesteśmy zespołem złożonym z paczki młodych i ambitnych uczniów szkół średnich. Pomysł na start w
+                olimpiadzie “Zwolnieni z Teorii” zrodził się właśnie z tego, że szkoła nie oferowała nam wystarczająco;
+                postanowiliśmy spróbować czegoś “poważnego”.
+                <br><br>PHOTO PLACEHOLDER
+            </p>
+            <p>
+                Podczas początkowych prac nad projektem udało nam się wpaść na dość ciekawy pomysł i uważamy, że
+                smallTalk może naprawdę zmienić coś w zakresie nawiązywania relacji przez dzisiejszą młodzież. Problem
+                społeczny jest realny, a nasza koncepcja powstała w wyniku rozpatrzenia wszystkich czynników, które
+                właśnie nam utrudniają zawieranie znajomości.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="contact" id="contact">
+            <div class="email">
+                <h2>Kontakt</h2>
+                <p>kontakt@smalltalk.today</p>
+            </div>
+            <div class="socialIcon">
+                <h2>Social media</h2>
+                <a href="https://www.facebook.com"><img src="images/icons/facebook1.png" alt="Facebook Icon"></a>
+                <a href="https://www.facebook.com"><img src="images/icons/linkedin-logo.png" alt="Linkedin Icon"></a>
+                <a href="https://www.facebook.com"><img src="images/icons/youtube.png" alt="Youtube Icon"></a>
+                <a href="https://www.facebook.com"><img src="images/icons/instagram.png" alt="Instagram Icon"></a>
+                <a href="https://www.facebook.com"><img src="images/icons/tiktok.png" alt="Tiktok Icon"></a>
+            </div>
+            <div class="zw">
+                <h2>Projekt realizowany w <br>ramach olimpiady</h2>
+                <img src="images/logoZwolenieni.svg" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
