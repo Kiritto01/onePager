@@ -46,3 +46,74 @@ $(document).ready(function(){
       }
     });
   });
+
+  
+function disableScroll() {
+  document.body.classList.add("stop-scrolling");
+}
+function enableScroll() {
+  document.body.classList.remove("stop-scrolling");
+}
+//loading animation
+$(document).ready(function(e) {
+  var UD_h1_string = $("h1").text();
+  $("h1").empty();
+
+  function ud_create_span(Objekt, Class, Target) {
+    $("<span>", {
+      class: Class,
+      text: Objekt
+    }).appendTo(Target);
+  }
+
+  for (i = 0; i < UD_h1_string.length; i++) {
+    $("h1").html(
+      ud_create_span(UD_h1_string.charAt(i), "ud_bounce ud_" + i, "h1")
+    );
+  }
+
+  var UD_h1_spans = $("h1").children("span");
+  var UD_h1_span_width = 0;
+
+  for (i = 0; i <= UD_h1_spans.length; i++) {
+    for (p = 0; p < i; p++) {
+      UD_h1_span_width = UD_h1_span_width + $(UD_h1_spans[p]).width();
+      console.log(UD_h1_span_width);
+    }
+
+    $(UD_h1_spans[i]).css("left");
+    UD_h1_span_width = 0;
+    console.log(UD_h1_spans[i]);
+  }
+
+  ud_animation(
+    $("h1")
+      .children("span")
+      .first()
+  );
+
+  function ud_animation(Objekt) {
+    $(Objekt).animate({ bottom: 8 }, 100, function(e) {
+      if (
+        $(Objekt)
+          .next()
+          .hasClass("ud_bounce")
+      ) {
+        ud_animation($(Objekt).next(".ud_bounce"));
+      } else {
+        ud_animation(
+          $("h1")
+            .children("span")
+            .first()
+        );
+      }
+      $(Objekt).animate({ bottom: 15 }, 100, function(e) {
+        $(Objekt).animate({ bottom: 0 }, 150);
+      });
+    });
+  }
+});
+$(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+
