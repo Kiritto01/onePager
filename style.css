@@ -19,6 +19,8 @@ a {
 /* Header */
 
 .header {
+    position: absolute;
+    z-index: 10;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     width: 100%;
     padding-top: .5vw;
@@ -148,13 +150,25 @@ a {
 }
 /* Slogan */
 .slogan{
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    font-size: 3rem;
+    z-index: 0;
     text-align: center;
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 1.925);
+}
+.slogan h2{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
 }
 
+.bc{
+    width: 100%;
+    height: 100%;
+}
 
-/* O Projekcie*/
+/*Problem społeczny*/
 .project{
     margin-top: 10vh;
     margin-left: 1vw;
@@ -162,6 +176,29 @@ a {
     font-size: large;
     font-weight: bold;
     padding: 0 10% 0 10%;
+}
+.about h2,
+.project h2{
+    font-size:5vh;
+}
+.about p,
+.project p{
+    margin-bottom: 14vh;
+    font-weight: bold;
+    font-size: 3vh;
+    padding: 0 35% 0 35%;
+}
+.about button,
+.project button{
+    font-family:'Roboto', sans-serif;;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #6B6B6B;
+    border-radius: 3px;
+    background-color: #2CC069;
+    width: 20vw;
+    height: 5vh;
 }
 /* O Nas*/
 .about{
@@ -309,8 +346,21 @@ a {
         text-decoration: none;
         font-weight:bold;
     }
-    .slogan{
-        font-size: 1.5rem;
+    .about h2,
+    .project h2,
+    .slogan h2{
+        font-size: 1.2rem;
+    }
+    .about p,
+    .project p {
+        padding: 0 10% 0 10%;
+    }
+    .project{
+        margin: 0;
+    }
+    .about button,
+    .project button{
+        width: 45vw;
     }
     .firstLine img{
         width: 50%;
@@ -343,6 +393,7 @@ a {
 
 /* Loading screen */
 .loader-wrapper {
+    z-index: 99;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -363,3 +414,6 @@ a {
 .loader h1 span{
     position: relative;
 }
+
+
+
