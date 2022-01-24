@@ -131,7 +131,6 @@ function topScroll() {
 
 $(window).on("load",function(){
      $(".loader-wrapper").fadeOut("slow");
-     enableScroll()
 });
 
 // navbar
