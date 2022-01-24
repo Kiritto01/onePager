@@ -48,7 +48,7 @@ h2 {
 .section {
     text-align: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
@@ -423,9 +423,10 @@ footer {
     padding: 1em;
     width: 60%;
 }
+
 /* 48em = 768px */
 
-@media (min-width: 48rem) {
+@media (min-width: 56rem) {
     .zw{
         text-align: center;
         padding: 1em;
@@ -479,10 +480,9 @@ footer {
     } */
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 43rem) {
     .logo{
         margin-left: 5vw;
-        margin-top: 2vh;
     }
     .dwBTTN{
         padding-top: 3vw;
@@ -571,5 +571,9 @@ footer {
 
 .stop-scrolling {
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
