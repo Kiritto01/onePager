@@ -113,8 +113,25 @@ $(document).ready(function(e) {
     });
   }
 });
+
+function disableScroll() {
+  document.body.classList.add("stop-scrolling");
+}
+
+function enableScroll() {
+  document.body.classList.remove("stop-scrolling");
+}
+
+function topScroll() {
+  // Get the current page scroll position
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  window.scrollTo(scrollLeft, scrollTop);
+}
+
 $(window).on("load",function(){
      $(".loader-wrapper").fadeOut("slow");
+     enableScroll()
 });
 
 // navbar
@@ -128,3 +145,4 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+disableScroll()
