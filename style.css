@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 body {
-    font-size: 18px;
+    font-size: 24px;
     margin: 0;
     font-family: 'Lato', sans-serif;
     background-color:var(--bg-color);
@@ -76,8 +76,7 @@ h2 {
     /* margin-bottom: 1em; */
 }
 .wifi {
-    font-size: 2rem;
-    padding-right: 1rem;
+    width: 3rem;
 }
 .to-right {
     text-align: end;
@@ -95,7 +94,9 @@ h2 {
 }
 
 /* Header */
-
+object {
+    padding-top: 0.2em;
+}
 .header {
     position: fixed;
     top: 0;
@@ -103,7 +104,7 @@ h2 {
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     width: 100%;
     height: var(--header-height);
-    padding-top: .5vw;
+    padding-top: .5em;
     padding-bottom: .5em;
     background-color:var(--bg-color);
     -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -144,7 +145,10 @@ h2 {
     padding-left: 1vw;
     text-decoration: none;
 }
-
+.logo {
+    margin-left: 1rem;
+    padding-top: 3rem;
+}
 /* Menu */
 
 .dwBTTN{
@@ -214,7 +218,7 @@ h2 {
 
 .header .menu-btn:checked ~ .menu {
     /* top:calc(var(--header-height) - 5px); */
-    max-height: 240px;
+    max-height: 14em;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -301,6 +305,10 @@ h2 {
 /*Solution*/
 .solution-photo {
     width: 80%;
+
+}
+.solution h4 {
+    margin-bottom: 0;
 }
 
 /*Difference*/
@@ -319,7 +327,7 @@ h2 {
 }
 .team{
     /* margin-top: 5vh; */
-    width: 100%;
+    width: 80%;
     justify-content: center;
     text-align: center;
     font-weight: bold;
@@ -329,11 +337,15 @@ h2 {
 }
 .person-item{
     margin: 1em;
-    /* max-width: 200px; */
+    max-width: 200px;
     /* max-height: 300px; */
 }
 .person-item img {
     width: 200px;
+    box-shadow: 2px 4px 1px 1px #424242;
+}
+.shadow {
+    box-shadow: 2px 4px 1px 1px #424242;
 }
 /* Pierwszy rząd zdjęć x3 */
 /* .firstLine{
@@ -409,6 +421,7 @@ footer {
 .icons {
     justify-content: center;
     flex-wrap:wrap;
+    width: 50%;
     margin-top: 1em;
 }
 .socialIcon img{
@@ -427,6 +440,7 @@ footer {
 /* 48em = 768px */
 
 @media (min-width: 56rem) {
+    .team {width: 60%;}
     .zw{
         text-align: center;
         padding: 1em;
@@ -436,7 +450,7 @@ footer {
         width: 40%;
     }
     .body {
-        font-size: 24px;
+        font-size: 30px;
     }
     .header{
         position: fixed;
@@ -467,7 +481,7 @@ footer {
         flex-direction: row;
     }
     .content{ 
-        max-width: 60%;
+        max-width: 40%;
     }
     .socialIcon img{
         margin-right: 5px;
@@ -480,10 +494,8 @@ footer {
     } */
 }
 
-@media screen and (max-width: 43rem) {
-    .logo{
-        margin-left: 5vw;
-    }
+@media screen and (max-width: 56rem) {
+
     .dwBTTN{
         padding-top: 3vw;
     }
