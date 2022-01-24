@@ -117,3 +117,14 @@ $(window).on("load",function(){
      $(".loader-wrapper").fadeOut("slow");
 });
 
+// navbar
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos | currentScrollPos < 60) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-3.5em";
+  }
+  prevScrollpos = currentScrollPos;
+}

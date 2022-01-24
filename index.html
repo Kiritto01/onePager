@@ -6,17 +6,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> --> -->
     <title>smallTalk</title>
 </head>
 <body id="body">
     <div class="loader-wrapper">
         <span class="loader"><h1>smallTalk</h1></span>
     </div>
-    <header class="header">
+    <header class="header" id="navbar">
         <a href="" class="logo"> <i>small</i><b>Talk</b></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -29,12 +32,15 @@
         </ul>
     </header>
     <div class="wrapper">
-        <div class="slogan">
-            <h2>Nawiązywanie<br><b>znajomości nigdy</b><br> nie było prostsze!</h2>
-            <div>
-                <img class="bc" src="images/bc.jpg" alt="">
+        <div class="slogan section">
+            <div class="linear-main container">
+                <h2 class="content">Nawiązywanie znajomości nigdy nie było prostsze!</h2>
+                <div class="container">
+                    <p class="text-main">Poznawanie innych osób może być wspaniałym doświadczeniem - niestety często boimy się zrobić pierwszy krok, lub nie mamy już do tego okazji.</p>
+                    <p class="text-main">Naszą misją jest stworzenie miejsca, w którym będziesz mógł w bezpieczny sposób poznać ludzi z Twojego otoczenia.</p>
+                </div>
+                <!-- <p class="text-main"></p> -->
             </div>
-
         </div>
         <div class="project" id="project">
             <h2>Problem społeczny XXI w.</h2>
@@ -53,82 +59,85 @@
             <button>OK</button>
         </div>
         <!-- Zdjęcia całego teamu  -->
-        <div class="team">
-            <p>NASZ ZESPÓŁ</p>
+        <div class="section">
+            <div class="team content">
+            <!-- <div class="team">
+                <p>NASZ ZESPÓŁ</p>
+            </div> -->
+                <div class="person-item">
+                    <img src="images/prof/EM206960.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/karol-godlewski-9265141b2/" target="_blank">Karol Godlewski</a></h2>
+                    <p>Backend Developer</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206939.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/szymon-sposób-75a583226/" target="_blank">Szymon Sposób</a></h2>
+                    <p>Frondend Developer</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206773.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/patryk-giza-8b2969225/" target="_blank">Patryk Giza</a></h2>
+                    <p>Frondend Developer</p>
+                </div>
+
+
+                <div class="person-item">
+                    <img src="images/prof/EM206796.jpg" alt="">
+                    <h2><a href="https://www.facebook.com" target="_blank">Kacper Capiga</a></h2>
+                    <p>Backend Developer</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206861.jpg" alt="">
+                    <h2><a href="https://www.facebook.com" target="_blank">Patrycja Wysocka</a></h2>
+                    <p>Mentorka</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206861.jpg" alt="">
+                    <h2><a href="https://www.facebook.com" target="_blank">Jakub Szalacha</a></h2>
+                    <p>Social Media</p>
+                </div>
+            
+
+                <div class="person-item">
+                    <img src="images/prof/EM206983.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/maciej-tracz-it/" target="_blank">Maciej Tracz</a></h2>
+                    <p>Social Manager</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206826.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/szymon-kowal-330955229" target="_blank">Szymon Kowal</a></h2>
+                    <p>Grafik</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/PSFix_20220117_185302.jpeg" alt="">
+                    <h2><a href="https://www.facebook.com" target="_blank">Tomek Gawłowski</a></h2>
+                    <p>FIlmowiec</p>
+                </div>
+            </div>
         </div>
-        <div class="firstLine">
-            <div class="p2">
-                <img src="images/prof/EM206960.jpg" alt="">
-                <h2><a href="https://www.linkedin.com/in/karol-godlewski-9265141b2/" target="_blank">Karol Godlewski</a></h2>
-                <p>Backend Developer</p>
+        <footer class="section">
+            <div class="contact" id="contact">
+                <div class="email">
+                    <h2>Kontakt</h2>
+                    <p>kontakt@smalltalk.today</p>
+                </div>
+                <div class="socialIcon">
+                    <h2>Social media</h2>
+                    <a href="https://www.facebook.com"><img src="images/icons/facebook1.png" alt="Facebook Icon"></a>
+                    <a href="https://www.facebook.com"><img src="images/icons/linkedin-logo.png" alt="Linkedin Icon"></a>
+                    <a href="https://www.facebook.com"><img src="images/icons/youtube.png" alt="Youtube Icon"></a>
+                    <a href="https://www.facebook.com"><img src="images/icons/instagram.png" alt="Instagram Icon"></a>
+                    <a href="https://www.facebook.com"><img src="images/icons/tiktok.png" alt="Tiktok Icon"></a>
+                </div>
+                <div class="zw">
+                    <h2>Projekt realizowany w <br>ramach olimpiady</h2>
+                    <a href="https://zwolnienizteorii.pl" target="_blank"><img src="images/logoZwolenieni.svg" alt=""></a>
+                </div>
             </div>
-            <div class="p2">
-                <img src="images/prof/EM206939.jpg" alt="">
-                <h2><a href="https://www.linkedin.com/in/szymon-sposób-75a583226/" target="_blank">Szymon Sposób</a></h2>
-                <p>Frondend Developer</p>
-            </div>
-            <div class="p3">
-                <img src="images/prof/EM206773.jpg" alt="">
-                <h2><a href="https://www.linkedin.com/in/patryk-giza-8b2969225/" target="_blank">Patryk Giza</a></h2>
-                <p>Frondend Developer</p>
-            </div>
-        </div>
-        <div class="firstLine">
-            <div class="p2">
-                <img src="images/prof/EM206796.jpg" alt="">
-                <h2><a href="https://www.facebook.com" target="_blank">Kacper Capiga</a></h2>
-                <p>Backend Developer</p>
-            </div>
-            <div class="p2">
-                <img src="images/prof/EM206861.jpg" alt="">
-                <h2><a href="https://www.facebook.com" target="_blank">Patrycja Wysocka</a></h2>
-                <p>Mentorka</p>
-            </div>
-            <div class="p3">
-                <img src="images/prof/EM206861.jpg" alt="">
-                <h2><a href="https://www.facebook.com" target="_blank">Jakub Szalacha</a></h2>
-                <p>Social Media</p>
-            </div>
-        </div>
-        <div class="firstLine">
-            <div class="p2">
-                <img src="images/prof/EM206983.jpg" alt="">
-                <h2><a href="https://www.linkedin.com/in/maciej-tracz-it/" target="_blank">Maciej Tracz</a></h2>
-                <p>Social Manager</p>
-            </div>
-            <div class="p2">
-                <img src="images/prof/EM206826.jpg" alt="">
-                <h2><a href="https://www.linkedin.com/in/szymon-kowal-330955229" target="_blank">Szymon Kowal</a></h2>
-                <p>Grafik</p>
-            </div>
-            <div class="p3">
-                <img src="images/prof/PSFix_20220117_185302.jpeg" alt="">
-                <h2><a href="https://www.facebook.com" target="_blank">Tomek Gawłowski</a></h2>
-                <p>FIlmowiec</p>
-            </div>
-        </div>
+        </footer>
     </div>
     <!-- Stopka ze wszystkimi informacjami -->
-    <footer>
-        <div class="contact" id="contact">
-            <div class="email">
-                <h2>Kontakt</h2>
-                <p>kontakt@smalltalk.today</p>
-            </div>
-            <div class="socialIcon">
-                <h2>Social media</h2>
-                <a href="https://www.facebook.com"><img src="images/icons/facebook1.png" alt="Facebook Icon"></a>
-                <a href="https://www.facebook.com"><img src="images/icons/linkedin-logo.png" alt="Linkedin Icon"></a>
-                <a href="https://www.facebook.com"><img src="images/icons/youtube.png" alt="Youtube Icon"></a>
-                <a href="https://www.facebook.com"><img src="images/icons/instagram.png" alt="Instagram Icon"></a>
-                <a href="https://www.facebook.com"><img src="images/icons/tiktok.png" alt="Tiktok Icon"></a>
-            </div>
-            <div class="zw">
-                <h2>Projekt realizowany w <br>ramach olimpiady</h2>
-                <a href="https://zwolnienizteorii.pl" target="_blank"><img src="images/logoZwolenieni.svg" alt=""></a>
-            </div>
-        </div>
-    </footer>
+    
     <!-- Skrypt jest tutaj bo sie bugował -->
     <script src="script.js"></script>
 </body>

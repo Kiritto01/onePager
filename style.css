@@ -1,12 +1,16 @@
 :root{
     --bg-color: #f4f4f4;
     --bg-color-b: #292929;
+    --header-height: 3em;
+    
+    
 }
 
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
     background-color:var(--bg-color);
     color: var(--bg-color-b);
     cursor: default;
@@ -16,13 +20,41 @@ a {
     color: var(--bg-color-b);
 }
 
+/* wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--header-height);
+    width: 100%;
+}
+/*section*/
+.section {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content {
+    justify-self: center;
+}
+
 /* Header */
 
 .header {
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 10;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     width: 100%;
+    height: var(--header-height);
     padding-top: .5vw;
     padding-bottom: .5em;
     background-color:var(--bg-color);
@@ -80,6 +112,7 @@ a {
 .header .menu {
     clear: both;
     max-height: 0;
+    align-items: center;
     transition: max-height .2s ease-out;
 }
 
@@ -148,19 +181,31 @@ a {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
 }
+
 /* Slogan */
 .slogan{
+    background-image: url("images/bc.jpg");
+    height: calc(100vh - var(--header-height));
+    background-size: cover;
     z-index: 0;
     text-align: center;
     color: white;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 1.925);
 }
+.linear-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(81, 125, 163, 0.795002) 0%, #000000 99.98%, #010101 99.99%);
+}
 .slogan h2{
-    position: absolute;
+    /* position: absolute;
     top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 64px;
+    transform: translate(-50%, -50%); */
+    padding: 1em;
+    font-size: 3rem;
 }
 
 .bc{
@@ -215,13 +260,25 @@ a {
     border: var(--bg-color-b) 5px solid;
 }
 .team{
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
+    width: 100%;
+    justify-content: center;
     text-align: center;
     font-weight: bold;
-    font-size: 60px;
+    /* font-size: 60px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.person-item{
+    margin: 1em;
+    /* max-width: 200px; */
+    /* max-height: 300px; */
+}
+.person-item img {
+    width: 200px;
 }
 /* Pierwszy rząd zdjęć x3 */
-.firstLine{
+/* .firstLine{
     margin-top: 4vh;
     margin-left:5.9vw;
     text-align: center;
@@ -247,11 +304,14 @@ a {
     font-weight: bold;
     margin-left: 10vw;
     margin-bottom: 3vh;
-}
+} */
 
 /*Kontakt*/
+footer {
+    align-self: flex-end;
+}
 .contact{
-    display:inline-flex;
+    display: flex;
     width: 100%;
     margin-top: 10vh;
     background-color: var(--bg-color);
@@ -310,7 +370,12 @@ a {
 
 @media (min-width: 48em) {
     .header{
-        height: 6vh;
+        position: fixed;
+        top: 0;
+        height: var(--header-height);
+        display: flex;
+        align-items: center;
+        transition: top 0.3s;
     }
     .header li {
         float: left;
@@ -329,6 +394,13 @@ a {
     .about{
         padding: 0 10% 0 10%;
     }
+
+    .content{ 
+        max-width: 60%;
+    }
+    /* .team{
+        max-width: 60%;
+    } */
 }
 
 @media screen and (max-width: 48rem) {
@@ -350,6 +422,7 @@ a {
     .project h2,
     .slogan h2{
         font-size: 1.2rem;
+        margin: none;
     }
     .about p,
     .project p {
@@ -362,12 +435,12 @@ a {
     .project button{
         width: 45vw;
     }
-    .firstLine img{
+    /* .firstLine img{
         width: 50%;
         height: 50%;
         margin-right: 17vw;
-    }
-    .firstLine h2{
+    } */
+    /* .firstLine h2{
         margin-right: 17vw;
     }
     .p1{
@@ -375,7 +448,7 @@ a {
     }
     .firstLine p{
         margin-right: 17vw;
-    }
+    } */
     .contact{
         display: inline-block;
     }
