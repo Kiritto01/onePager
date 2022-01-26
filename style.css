@@ -60,6 +60,9 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+.container img{
+    margin-left: 1.2rem;
+}
 .horizontal {
     align-items: center;
     flex-direction: column;
@@ -135,7 +138,7 @@ object {
 .header .menu-btn:hover {
     color: var(--bg-color-b);
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 325);
-    transition: .5s;
+    transition: .2s;
 }
 .header .logo {
     display: block;
@@ -218,7 +221,7 @@ object {
 
 .header .menu-btn:checked ~ .menu {
     /* top:calc(var(--header-height) - 5px); */
-    max-height: 14em;
+    max-height: 18em;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -343,6 +346,9 @@ object {
 .person-item img {
     width: 200px;
     box-shadow: 2px 4px 1px 1px #424242;
+}
+.person-item a{
+    text-decoration: none;
 }
 .shadow {
     box-shadow: 2px 4px 1px 1px #424242;

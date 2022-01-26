@@ -27,14 +27,11 @@
         </span>
     </div>
     <header class="header" id="navbar">
-        <a href="" class="logo">
-            <!-- <i>small</i><b>Talk</b> -->
-            <object data="images/Logotype Black.svg" width="170px"> </object>
-        </a>
+        <a href="#slogan" class="logo"><img src="images/Logotype Black.svg" width="170px"> </img></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <!-- <button id="bttn" class="dwBTTN">DARK</button> -->
-        <ul class="menu">
+        <ul class="menu" id="link">
             <!-- <li><a href="#">Home</a></li> -->
             <li><a href="#project">Problem społeczny</a></li>
             <li><a href="#solution">Jak to działa</a></li>
@@ -44,7 +41,7 @@
         </ul>
     </header>
     <div class="wrapper">
-        <div class="slogan section">
+        <div id="slogan" class="slogan section">
             <div class="linear-main container">
                 <h2 class="content">Nawiązywanie znajomości nigdy nie było prostsze!</h2>
                 <div class="container content">
@@ -66,32 +63,35 @@
                         Żarty żartami, ale nawiązywanie relacji kiedyś było dużo łatwiejsze. Okazji do spontanicznych
                         spotkań na żywo było o wiele więcej. Ludzie często
                         byli dla siebie nawzajem jedyną rozrywką</p>
-                    <img class="wifi" src="images/network_wifi_black_24dp.svg"/>
+                    <img class="wifi" src="images/network_wifi_black_24dp.svg" alt="wifi-icon" />
                 </div>
                 <div class="container horizontal static element">
                     <p class="text-main bigger ">Za naszych czasów!
-                        Nadejście telefonów, internetu, a wraz z nim mediów społecznościowych początkowo budziło duże nadzieje.
-                        Cud globalnej sieci sprawił, że ludzie mogli przeszkód rozmawiać ze sobą znajdując się po dwóch stronach świata.
-                        
+                        Nadejście telefonów, internetu, a wraz z nim mediów społecznościowych początkowo budziło duże
+                        nadzieje.
+                        Cud globalnej sieci sprawił, że ludzie mogli przeszkód rozmawiać ze sobą znajdując się po dwóch
+                        stronach świata.
+
                         Mieli oni w końcu więcej okazji do rozmów, łatwiej
-                        umawiali się na spotkania, a ponadto prościej było znaleźć nowych znajomych o podobnych zainteresowaniach. Z czasem prowadziło
+                        umawiali się na spotkania, a ponadto prościej było znaleźć nowych znajomych o podobnych
+                        zainteresowaniach. Z czasem prowadziło
                         to jednak do zaniechania spotkań w prawdziwym świecie, "bo przecież możemy porozmawiać na
                         odległość"</p>
-                    <img class="wifi" src="images/network_wifi_3_bar_black_24dp.svg"/>
+                    <img class="wifi" src="images/network_wifi_3_bar_black_24dp.svg" alt="wifi-icon" />
                 </div>
                 <div class="container horizontal static element">
                     <p class="text-main bigger ">W sensie tych obecnych...
                         Pandemia koronawirusa nie wpłynęła dobrze na już ciężką ostatnimi laty sytuację. Ludzie przez
                         odosobnienie zamknęli się w sobie, zapomnieli jak rozmawiać z ludźmi, a lęki społeczne i
                         depresja stały się o wiele powszechniejsze.</p>
-                    <img class="wifi" src="images/network_wifi_2_bar_black_24dp.svg"/>
+                    <img class="wifi" src="images/network_wifi_2_bar_black_24dp.svg" alt="wifi-icon" />
                 </div>
                 <div class="container horizontal static element">
                     <p class="text-main bigger ">A teraz?
                         W tej chwili natomiast, problemy te zbierają swoje żniwo. Coraz ciężej zawrzeć porządną
                         znajomość, a mało kto ma odwagę podejść i zacząć konwersację. Dzisiejsze społeczeństwo
                         potrzebuje wsparcia w nawiązywaniu relacji.</p>
-                    <img class="wifi" src="images/network_wifi_1_bar_black_24dp.svg"/>
+                    <img class="wifi" src="images/network_wifi_1_bar_black_24dp.svg"  alt="wifi-icon"/>
                 </div>
 
             </div>
@@ -103,28 +103,33 @@
                 <div class="container horizontal element ">
                     <div class="container bigger">
                         <h4>Pobierz smallTalk</h4>
-                        <p class="text-main">Po pobraniu załóż konto - podajesz tylko swojego Facebooka, który będzie ukryty przed rozmówcą do czasu Ujawnienia.</p>
+                        <p class="text-main">Po pobraniu załóż konto - podajesz tylko swojego Facebooka, który będzie
+                            ukryty przed rozmówcą do czasu Ujawnienia.</p>
                     </div>
                     <img class="solution-photo" src="images/download_icon.png" alt="" />
                 </div>
                 <div class="container horizontal element ">
                     <div class="container bigger">
                         <h4>Dołącz do kręgu</h4>
-                        <p class="text-main  ">Poszukuj QR kodów z naszym logiem - za ich pomocą dostaniesz się do Kręgu swojej szkoły. Pamiętaj, że możesz być w kilku Kręgach jednocześnie!</p>
+                        <p class="text-main  ">Poszukuj QR kodów z naszym logiem - za ich pomocą dostaniesz się do Kręgu
+                            swojej szkoły. Pamiętaj, że możesz być w kilku Kręgach jednocześnie!</p>
                     </div>
                     <img class="solution-photo" src="images/Untitled (3).svg" alt="" />
                 </div>
                 <div class="container horizontal element ">
                     <div class="container bigger">
                         <h4>Wciśnij smallTalk w aplikacji</h4>
-                        <p class="text-main  ">Po kilku minutach zostaniesz dobrany przez system do kogoś z Kręgów, w które wszedłeś. Nie wiesz jak zacząć? Spokojnie, nasze <i>icebreakery</i> Wam pomogą...</p>
+                        <p class="text-main  ">Po kilku minutach zostaniesz dobrany przez system do kogoś z Kręgów, w
+                            które wszedłeś. Nie wiesz jak zacząć? Spokojnie, nasze <i>icebreakery</i> Wam pomogą...</p>
                     </div>
                     <img class="solution-photo" src="images/touch-6602643 (1).png" alt="" />
                 </div>
                 <div class="container horizontal element ">
                     <div class="container bigger">
                         <h4>Ciesz się nową znajomością</h4>
-                        <p class="text-main ">Dobrze się rozmawia, aż chciałoby się dowiedzieć kim jest druga osoba? Wystarczy, że oboje zaznaczycie <i>Chcę poznać</i> i dostaniecie do siebie kontakty podane przy rejestracji.</p>
+                        <p class="text-main ">Dobrze się rozmawia, aż chciałoby się dowiedzieć kim jest druga osoba?
+                            Wystarczy, że oboje zaznaczycie <i>Chcę poznać</i> i dostaniecie do siebie kontakty podane
+                            przy rejestracji.</p>
                     </div>
                     <img class="solution-photo" src="images/man-2425121.jpg" alt="" />
                 </div>
@@ -135,9 +140,12 @@
         <div class="difference section" id="difference">
             <div class="container content">
                 <h2>No dobrze, ale czym to się różni od zwykłego czatu?</h2>
-                <p class="text-main  ">Nasz czat jest anonimowy - dopóki oboje nie uznacie, że dobrze Wam się rozmawia i chcecie kontynuować znajomość.</p>
-                <p class="text-main  ">Jedyne co o sobie wiecie do momentu ujawnienia to fakt, że macie jakieś wspólne miejsce - np. chodzicie na ten sam wydział czy często przesiadujecie w tej samej kawiarnii.</p>
-                <p class="text-main ">No i oczywiście to, że ta druga osoba chce dokładnie tego samego co Ty - spędzić czas na wartościowej rozmowie i poznać kogoś nowego!</p>
+                <p class="text-main  ">Nasz czat jest anonimowy - dopóki oboje nie uznacie, że dobrze Wam się rozmawia i
+                    chcecie kontynuować znajomość.</p>
+                <p class="text-main  ">Jedyne co o sobie wiecie do momentu ujawnienia to fakt, że macie jakieś wspólne
+                    miejsce - np. chodzicie na ten sam wydział czy często przesiadujecie w tej samej kawiarnii.</p>
+                <p class="text-main ">No i oczywiście to, że ta druga osoba chce dokładnie tego samego co Ty - spędzić
+                    czas na wartościowej rozmowie i poznać kogoś nowego!</p>
                 <!-- <img src="images/cable_phone.jpeg" alt="two people talking with cable phone"/> -->
 
             </div>
@@ -147,65 +155,69 @@
         <div class="section container" id="teamx">
             <div class="content aligned">
                 <h2>Nasz zespół</h2>
-                <p class="text-main">Jesteśmy zespołem złożonym z paczki kumpli, którzy chcą zrobić coś dobrego dla innych.
+                <p class="text-main">Jesteśmy zespołem złożonym z paczki kumpli, którzy chcą zrobić coś dobrego dla
+                    innych.
                     Mamy ciekawy pomysł i wierzymy, że <b>smallTalk</b> może naprawdę
-                    pomóc rozpocząć wiele <b>wartościowych relacji</b> przez młodych ludzi. Z optymizmem patrzymy w przyszłość i niestety
+                    pomóc rozpocząć wiele <b>wartościowych relacji</b> przez młodych ludzi. Z optymizmem patrzymy w
+                    przyszłość i niestety
                     nie możemy się doczekać, kiedy będziemy mogli Wam pokazać nasze rozwiązanie w praktyce!</p>
             </div>
-                <div class="team">
-                    <div class="person-item">
-                        <img src="images/prof/EM206960.jpg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/karol-godlewski-9265141b2/" target="_blank">Karol
-                                Godlewski</a></h2>
-                        <p>Backend Developer</p>
-                    </div>
-                    <div class="person-item">
-                        <img src="images/prof/EM206939.jpg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/szymon-sposób-75a583226/" target="_blank">Szymon
-                                Sposób</a></h2>
-                        <p>Frontend Developer</p>
-                    </div>
-                    <div class="person-item">
-                        <img src="images/prof/EM206773.jpg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/patryk-giza-8b2969225/" target="_blank">Patryk Giza</a>
-                        </h2>
-                        <p>Frontend Developer</p>
-                    </div>
-
-
-                    <div class="person-item">
-                        <img src="images/prof/EM206796.jpg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/kacper-capiga-98bb1a176" target="_blank">Kacper Capiga</a></h2>
-                        <p>Backend Developer</p>
-                    </div>
-                    <div class="person-item">
-                        <img src="images/prof/EM206861.jpg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/jakub-szalacha-a74a92220/" target="_blank">Jakub Szalacha</a></h2>
-                        <p>Social Media</p>
-                    </div>
-                    <div class="person-item">
-                        <img src="images/prof/PSFix_20220117_185302.jpeg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/tomasz-gaw%C5%82owski-0b5b9422a/" target="_blank">Tomek Gawłowski</a></h2>
-                        <p>FIlmowiec</p>
-                    </div>
-                    <div class="person-item">
-                        <img src="images/prof/EM206983.jpg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/maciej-tracz-it/" target="_blank">Maciej Tracz</a></h2>
-                        <p>Social Manager</p>
-                    </div>
-                    <div class="person-item">
-                        <img src="images/prof/EM206826.jpg" alt="">
-                        <h2><a href="https://www.linkedin.com/in/szymon-kowal-330955229" target="_blank">Szymon
-                                Kowal</a></h2>
-                        <p>Grafik</p>
-                    </div>
-                    <div class="person-item">
-                        <img src="images/prof/image-placeholder-vertical.jpg" alt="">
-                        <h2><a href="https://www.facebook.com/profile.php?id=100011449591769" target="_blank">Patrycja Wysocka</a></h2>
-                        <p>Mentorka</p>
-                    </div>
+            <div class="team">
+                <div class="person-item">
+                    <img src="images/prof/EM206960.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/karol-godlewski-9265141b2/" target="_blank">Karol
+                            Godlewski</a></h2>
+                    <p>Backend Developer</p>
                 </div>
-            
+                <div class="person-item">
+                    <img src="images/prof/EM206939.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/szymon-sposób-75a583226/" target="_blank">Szymon
+                            Sposób</a></h2>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206773.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/patryk-giza-8b2969225/" target="_blank">Patryk <br> Giza</a>
+                    </h2>
+                    <p>Frontend Developer</p>
+                </div>
+
+
+                <div class="person-item">
+                    <img src="images/prof/EM206796.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/kacper-capiga-98bb1a176" target="_blank">Kacper <br> Capiga</a>
+                    </h2>
+                    <p>Backend Developer</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206861.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/jakub-szalacha-a74a92220/" target="_blank">Jakub
+                            Szalacha</a></h2>
+                    <p>Social Media</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/PSFix_20220117_185302.jpeg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/tomasz-gaw%C5%82owski-0b5b9422a/" target="_blank">Tomek
+                            Gawłowski</a></h2>
+                    <p>Youtube Manager</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206983.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/maciej-tracz-it/" target="_blank">Maciej <br> Tracz</a></h2>
+                    <p>Social Manager</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/EM206826.jpg" alt="">
+                    <h2><a href="https://www.linkedin.com/in/szymon-kowal-330955229" target="_blank">Szymon <br>Kowal</a></h2>
+                    <p>Grafik</p>
+                </div>
+                <div class="person-item">
+                    <img src="images/prof/patrycja.jpeg" alt="">
+                    <h2><a href="https://www.facebook.com/profile.php?id=100011449591769" target="_blank">Patrycja Wysocka</a></h2>
+                    <p>Mentorka</p>
+                </div>
+            </div>
+
         </div>
         <footer class="contact container">
             <div class="content container " id="contact">
@@ -219,11 +231,12 @@
                     <a href="https://www.facebook.com"><img src="images/icons/youtube.png" alt="Youtube Icon"></a>
                     <a href="https://www.facebook.com"><img src="images/icons/instagram.png" alt="Instagram Icon"></a>
                     <a href="https://www.facebook.com"><img src="images/icons/tiktok.png" alt="Tiktok Icon"></a>
-                    
+
                 </div>
                 <div class="zw content container horizontal static">
                     <span class="to-right" style="margin-right: 1em;">Projekt realizowany w ramach olimpiady</span>
-                    <a href="https://zwolnienizteorii.pl" target="_blank"><img src="images/logoZwolenieni.svg" alt=""></a>
+                    <a href="https://zwolnienizteorii.pl" target="_blank"><img src="images/logoZwolenieni.svg"
+                            alt=""></a>
                 </div>
             </div>
         </footer>

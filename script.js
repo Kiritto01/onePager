@@ -78,12 +78,10 @@ $(document).ready(function(e) {
   for (i = 0; i <= UD_h1_spans.length; i++) {
     for (p = 0; p < i; p++) {
       UD_h1_span_width = UD_h1_span_width + $(UD_h1_spans[p]).width();
-      console.log(UD_h1_span_width);
     }
 
     $(UD_h1_spans[i]).css("left");
     UD_h1_span_width = 0;
-    console.log(UD_h1_spans[i]);
   }
 
   ud_animation(
@@ -141,7 +139,15 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-3.5em";
+    document.getElementById("menu-btn").checked = false;
   }
   prevScrollpos = currentScrollPos;
 }
+
+const link = document.getElementById('link')
+
+link.addEventListener("click",() =>{
+  document.getElementById("menu-btn").checked = false;
+})
+
 disableScroll()
