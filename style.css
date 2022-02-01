@@ -339,7 +339,7 @@ object {
     flex-wrap: wrap;
 }
 .person-item{
-    margin: 3em;
+    margin: 1em 2.04em 1em 2.04em;
     max-width: 200px;
     /* max-height: 300px; */
 }
