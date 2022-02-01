@@ -180,7 +180,7 @@ object {
     float:right;
     cursor: pointer;
     display: inline-block;
-    padding: 28px 20px 0 20px;
+    padding: 28px 20px 0 30px;
     position: relative;
     user-select: none;
 }
@@ -196,7 +196,7 @@ object {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-    background: #333;
+    background: var(--bg-color-b);
     content: '';
     display: block;
     height: 100%;
@@ -249,14 +249,14 @@ object {
     z-index: 0;
     text-align: center;
     color: white;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 1.925);
+    /* text-shadow: 0px 2px 4px rgba(0, 0, 0, 1.925); */
 }
 .linear-main{
     display: flex;
     /* justify-content: center; */
     align-items: center;
     width: 100%;
-    background: linear-gradient(180deg, rgba(81, 125, 163, 0.795002) 0%, #000000 99.98%, #010101 99.99%);
+    background: linear-gradient(180deg, rgba(81, 125, 163, 0.855002) 0%, #000000 99.98%, #010101 99.99%);
 }
 .slogan h2{
     /* position: absolute;
@@ -339,7 +339,7 @@ object {
     flex-wrap: wrap;
 }
 .person-item{
-    margin: 1em;
+    margin: 1em 2.05em 1em 2.05em;
     max-width: 200px;
     /* max-height: 300px; */
 }
@@ -467,7 +467,7 @@ footer {
 
 
 }
-@media (min-width: 56rem) {
+@media (min-width: 61rem) {
     .team {width: 60%;}
     .zw{
         text-align: center;
@@ -522,7 +522,7 @@ footer {
     } */
 }
 
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 61rem) {
 
     .dwBTTN{
         padding-top: 3vw;
@@ -583,6 +583,8 @@ footer {
         padding-right: 12vw;
     } */
 }
+
+
 
 /* Loading screen */
 .loader-wrapper {

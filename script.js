@@ -33,6 +33,8 @@
 // });
 
 //scrolling
+let checke = false;
+
 $(document).ready(function(){
     $("a").on('click', function(event) {
       if (this.hash !== "") {
@@ -42,6 +44,10 @@ $(document).ready(function(){
           scrollTop: $(hash).offset().top
         }, 1000, function(){
           window.location.hash = hash;
+          if(hash!=="#body"){
+            document.getElementById("navbar").style.top = "-3.5em";
+            document.getElementById("menu-btn").checked = false;
+          }
         });
       }
     });
@@ -133,21 +139,17 @@ $(window).on("load",function(){
 
 // navbar
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+const navbar = document.getElementById("link");
+
+window.onscroll = function(){
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos | currentScrollPos < 60) {
     document.getElementById("navbar").style.top = "0";
-  } else {
+  }
+  else {
     document.getElementById("navbar").style.top = "-3.5em";
     document.getElementById("menu-btn").checked = false;
   }
   prevScrollpos = currentScrollPos;
 }
-
-const link = document.getElementById('link')
-
-link.addEventListener("click",() =>{
-  document.getElementById("menu-btn").checked = false;
-})
-
 disableScroll()
