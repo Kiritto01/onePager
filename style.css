@@ -346,6 +346,14 @@ object {
 .person-item img {
     width: 200px;
     box-shadow: 2px 4px 1px 1px #424242;
+    transition: 1s;
+}
+.person-item h2:hover{
+    transition: .5s;
+    transform: translateY(-10px);
+}
+.person-item h2{
+    transition: .5s;
 }
 .person-item a{
     text-decoration: none;
@@ -438,6 +446,11 @@ footer {
     margin-left: 3px;
     width: 2.5rem;
     height: 2.5rem;
+    transition: 0.5s;
+}
+.socialIcon img:hover{
+    transform: translateY(-10px);
+    transition: .5s;
 }
 .zw{
 
