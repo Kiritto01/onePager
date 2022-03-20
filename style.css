@@ -132,6 +132,16 @@ object {
     text-decoration: none;
     font-weight:bold;
 }
+.appbutton{
+    text-decoration: none;
+    padding: 1em 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background-color:#8c00ff;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+}
 .person-item a:hover,
 .dwBTTN:hover,
 .header li a:hover,
@@ -144,7 +154,7 @@ object {
     display: block;
     float: left;
     font-size: 2rem;
-    padding-top: 0.5%;
+    padding-top: .2em;
     padding-left: 1vw;
     text-decoration: none;
 }
