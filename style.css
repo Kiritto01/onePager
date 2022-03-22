@@ -136,11 +136,18 @@ object {
     text-decoration: none;
     padding: 1em 2em;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     background-color:#8c00ff;
-    border-radius: 10px;
+    border-radius: 100rem;
     color: white;
     font-size: 25px;
+}
+.servbutton{
+    padding: 1em 2.5em;
+    background-color: white;
+    color: #8c00ff;
+    margin-top: 0em;
+    border: #8c00ff 5px solid;
 }
 .person-item a:hover,
 .dwBTTN:hover,
